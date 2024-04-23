@@ -1,0 +1,178 @@
+*{
+    /* Eliminamos espacios y márgenes*/
+       margin:0;
+       padding:0;
+    /* Declaramos una tipografía para TODO */
+        font-family: "Varela Round", sans-serif;
+    /* Declaramos un font-size base */
+}
+
+/*RESET - bs*/
+.container-fluid{
+    --bs-gutter-x: 0; 
+    --bs-gutter-y: 0; 
+}
+/*header*/
+    /*Nav - estilos BS*/
+    .k--logo{
+        color: #ffffff;
+    }
+.encabezado{
+    background-image: url('../assets/header-banner-index-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.encabezado img{
+    width: 100px;
+}
+.encabezado nav{
+    width: 40%;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.menu-list li{
+    display: flex;
+    list-style: none;
+}
+.menu-list li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*main*/
+.titulo{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+}
+
+.card-k{
+    background-color: #E2D9C8;
+    border-radius: 10px;
+    border: 3px solid #6B6155;
+    overflow: hidden;
+}
+.card p{
+    padding: 10px;
+    text-align: left;
+}
+.card-button{
+    background-color: #30261C;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.cont-img img{
+    width: 100%;
+}
+    /*box-model*/
+    .centro{
+        text-align: center;
+        margin: 20px;
+    }
+    .bloque p{  
+        background-color: #d1bd99;
+        font-size: 1.1em;
+    }
+    .cont{
+        margin-top: 30px;
+    }
+        .cont h4{
+        background-color: #E2D9C8;
+        padding: 50px;
+        border: 3px solid #30261C;
+        margin: 20px;
+    }
+    .cont-padding{
+        background-color: #E2D9C8;
+        padding: 20px;
+    }
+    .cont-margin{
+        background-color: #E2D9C8;
+        margin: 50px;
+        border: 3px solid #6B6155;
+    }
+ 
+    .img-width{
+        width: 250px;
+    }
+/*aside^*/
+.nota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: eventos;
+}
+.nota p{
+    width: 780px;
+}
+/*footer*/
+.pie{
+    background-color: #30261C;
+    grid-area: pie-pagina;
+}
+.pie__logo{
+    width: 50%;
+}
+
+/*MEDIA QUERIES*/
+/*
+BS: 
+xs
+<576px	sm 👉 Mobile
+≥576px	md 👉Tablet
+≥768px	lg 
+≥992px	xl 👉 Desktop
+≥1200px	xxl
+≥1400px
+
+max-width 👉 Desktop a mobile
+
+
+*/
+
+/*Tablet*/
+@media (max-width:768px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 0.1fr 0.5fr 0.5fr;
+        grid-template-areas:
+            "barra-menu   barra-menu "
+            "eventos      eventos "
+            "pedidos      pedidos "
+            "pie-pagina   pie-pagina";
+     }
+    .nota p {
+        width: 100%;
+    }
+    .cont-product{
+        flex-flow: wrap;
+    }
+
+    .pie{
+        background-color: #a66422;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width:576px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px none 0.5fr 100px;
+        grid-template-areas:
+            "barra-menu  "
+            "eventos"
+            "pedidos "
+            "pie-pagina";
+     }
+     .menu-list{
+        display: none;
+     }
+}

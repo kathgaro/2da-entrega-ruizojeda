@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--mis estilos-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Contacto - Coffee de kath</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="../assets/logo-coffee.png" alt="Descripción de la imagen que llamo en el src">
+        <nav>
+            <ul class="menu-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicio</a></li>
+                <li><a href="./products.html">Productos</a></li>
+                <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Ejemplo de box-model -->
+        <h1 class="titulo">Box Model</h1>
+        <section> 
+            <article class="bloque">
+                <h2 class="centro">Etiquetas en bloque</h2>
+                <p>Estas etiquetas son las que ocupan el 100% de la pantalla. Esta configuración viene por default (incluye su propio padding y margin) y nosotros podremos modificarla usando el "reset".<br>
+                Para conocer o ver sus estilos originales podemos usar el "inspeccionar" en el navegador, mostrará su "display:block"</p>
+                <button onclick="window.location.href ='https://developer.mozilla.org/es/docs/Glossary/Block-level_content'">Ver etiquetas en bloque</button>
+            </article>
+            <article class="bloque">
+                <h2 class="centro">Etiquetas en Linea</h2>
+                <p>Estas etiquetas solo ocupan el espacio de su contenido, por ejemplo, la etiqueta "span" es un contenedor en línea, no ocupa el 100% de pantalla pero ocupa el ancho de su contenido <br>
+                Para conocer o ver sus estilos originales podemos usar el "inspeccionar" en el navegador, mostrará su "display:inline"
+                </p>
+                <button>Contenido de un elemento en línea</button>
+                <button onclick="window.location.href ='https://developer.mozilla.org/es/docs/orphaned/Web/HTML/Inline_elements'">Ver etiquetas en bloque</button>
+            </article>
+            <article>
+                <h3 class="centro"> EJEMPLOS </h3>
+                <div>
+                    <h4 class="centro">Padding</h4>
+                    <div class="cont-img cont-padding">
+                        <img src="../assets/header-banner-index-1.jpg" alt="ejemplo">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="centro">Margin</h4>
+                    <div class="cont-img cont-margin">
+                        <img src="../assets/header-banner-index-1.jpg" alt="ejemplo">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="centro">Modificando display a un elemento en bloque</h4>
+                    <div class="cont-img">
+                        <img src="../assets/header-banner-index.jpg" alt="ejemplo">
+                    </div>
+                    <div class="cont-img">
+                        <img src="../assets/header-banner-index.jpg" alt="ejemplo">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="centro">Modificando display a un elemento en línea</h4>
+                    <img class="img-width" src="../assets/header-banner-index.jpg" alt="ejemplo">
+                    <img class="img-width" src="../assets/header-banner-index-1.jpg" alt="ejemplo">
+                    <img class="img-width" src="../assets/aside-banner-1.jpg" alt="ejemplo">
+                    <img class="img-width" src="../assets/aside-banner.jpg" alt="ejemplo">
+                </div>
+                
+            </article>
+        </section>
+        <section>   
+            <article>
+                <h2 class="titulo centro">Aplicando box model</h2>
+                <div class="cont">
+                    <code>Agregamos <strong>padding, margin, border</strong>  al
+                        h4 {
+                            padding: 50px;
+                            border: 3px solid #30261C;
+                            margin: 20px;
+                        }
+                    </code>
+                    <h4>Titulos - En este caso de tercera jerarquia</h4>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="pie">
+        <!--logo-->
+        <img class="img-width" src="../assets/logo-coffee.png" 
+        alt="Descripción de la imagen que llamo en el src"
+        >
+        <!--menu extendido-->
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./servicios.html">Servicio</a></li>
+            <li><a href="./products.html">Productos</a></li>
+            <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <!--redes sociales-->
+        <div>   
+            <img src="tiktok" alt="tiktok">
+            <img src="instagram" alt="instagram">
+            <img src="whatsapp" alt="whatsapp">
+        </div>
+    </footer>
+</body>
+</html>
