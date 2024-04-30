@@ -23,8 +23,8 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="encabezado__menu__list collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
+                  <div class=" collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav encabezado__menu__list">
                       <li><a class="nav-link" aria-current="page" href="#">Home</a></li>
                       <li><a class="nav-link" href="#">Productos</a></li>
                       <li><a class="nav-link" href="#">Servicios</a></li>
@@ -107,26 +107,33 @@
         </main>
         <aside class="nota p-5"> <!-- Noticias - Eventos -->
             <h2 class="nota__titulo p-2">Conoce nuestros eventos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quibusdam ratione, illo soluta reiciendis non eaque, quisquam sit nam totam aliquid voluptas repellat accusantium eveniet illum laudantium consectetur veniam nemo?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rerum, tempore vero doloremque veniam iste officiis. Similique non adipisci fugit nesciunt, obcaecati quo labore totam, voluptatibus magnam, ab cum minima.</p>
+            <div class="nota__txt">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quibusdam ratione, illo soluta reiciendis non eaque, quisquam sit nam totam aliquid voluptas repellat accusantium eveniet illum laudantium consectetur veniam nemo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rerum, tempore vero doloremque veniam iste officiis. Similique non adipisci fugit nesciunt, obcaecati quo labore totam, voluptatibus magnam, ab cum minima.</p>
+            </div>
             <button class="venta__card__cont__button">Quiero más información</button>
         </aside>
-        <footer class="pie">
-            <!--logo-->
-            <img class="pie__logo" src="./assets/logo-coffee.png" alt="Descripción de la imagen que llamo en el src">
-            <!--menu extendido-->
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./html/servicios.html">Servicio</a></li>
-                <li><a href="./html/products.html">Productos</a></li>
-                <li><a href="./html/faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="./html/contacto.html">Contacto</a></li>
-            </ul>
-            <!--redes sociales-->
-            <div>   
-                <img src="tiktok" alt="tiktok">
-                <img src="instagram" alt="instagram">
-                <img src="whatsapp" alt="whatsapp">
+        <footer class="pie ">
+            <div class="d-flex">
+                <!--logo-->
+                <img class="pie__logo" src="./assets/logo-coffee.png" alt="Descripción de la imagen que llamo en el src">
+                <!--menu extendido-->
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./html/servicios.html">Servicio</a></li>
+                    <li><a href="./html/products.html">Productos</a></li>
+                    <li><a href="./html/faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./html/contacto.html">Contacto</a></li>
+                </ul>
+                <!--redes sociales-->
+                <div>   
+                    <img src="tiktok" alt="tiktok">
+                    <img src="instagram" alt="instagram">
+                    <img src="whatsapp" alt="whatsapp">
+                </div>
+            </div>
+            <div class="pie__copy">
+                <p>Proyecto creado en clase de Desarrollo Web | Coderhouse por Prof. Katherine Ruiz Ojeda</p>
             </div>
         </footer>
     </div>

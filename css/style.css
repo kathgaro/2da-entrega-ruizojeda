@@ -85,17 +85,24 @@
     text-align: center;
     margin: 1em;
 }
-.nota p{
-    width: 780px;
+.nota__txt{
+    max-width: 780px;
 }
 /*footer*/
 .pie{
     background-color: #30261C;
+    justify-content: space-evenly;
+    padding: 25px;
 }
 .pie__logo{
-    width: 120px;
+    width: 22%;
 }
-
+.pie__copy{
+    color: #ffffff;
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 20px ;
+}
 /*MEDIA QUERIES*/
 /*
 BS: 
@@ -114,40 +121,16 @@ max-width 👉 Desktop a mobile
 
 /*Tablet*/
 @media (max-width:768px) {
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 0.1fr 0.5fr 0.5fr;
-        grid-template-areas:
-            "barra-menu   barra-menu "
-            "eventos      eventos "
-            "pedidos      pedidos "
-            "pie-pagina   pie-pagina";
-     }
-    .nota p {
-        width: 100%;
+    .venta__card__cont{
+        width: 240px;
+        margin-bottom: 20px;
     }
-    .cont-product{
-        flex-flow: wrap;
+    .encabezado__menu__list li{
+        justify-content: end;
     }
-
-    .pie{
-        background-color: #a66422;
-    }
-
 }
 
 /*Mobile*/
 @media (max-width:576px){
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px none 0.5fr 100px;
-        grid-template-areas:
-            "barra-menu  "
-            "eventos"
-            "pedidos "
-            "pie-pagina";
-     }
-     .menu-list{
-        display: none;
-     }
+  
 }
