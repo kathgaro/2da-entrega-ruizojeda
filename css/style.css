@@ -14,7 +14,7 @@
 }
 /*header*/
     /*Nav - estilos BS*/
-    .encabezado--logo{
+    .encabezado__logo{
         color: #ffffff;
     }
 .encabezado{
@@ -22,44 +22,45 @@
     background-size: cover;
     background-position: center;
 }
-.encabezado img{
+.encabezado__menu img{
     width: 100px;
 }
-.encabezado nav{
+.encabezado__menu{
     width: 40%;
 }
-.menu-list{
+.encabezado__menu__list{
     display: flex;
     justify-content: space-evenly;
     height: 100%;
 }
-.menu-list li{
+.encabezado__menu__list li{
     display: flex;
     list-style: none;
 }
-.menu-list li a{
+.encabezado__menu__list li a{
     color: #ffffff;
     text-decoration: none;
 }
 /*main*/
-.titulo{
+.venta__titulo{
     font-family: "Cedarville Cursive", cursive;
     font-size: 2em;
     text-align: center;
     margin: 1em;
 }
-
-.card__cont{
+.venta__card__cont{
     background-color: #E2D9C8;
     border-radius: 10px;
     border: 3px solid #6B6155;
     overflow: hidden;
+    width: 190px;
+    padding: 0;
 }
-.card__cont p{
+.venta__card__cont p{
     padding: 10px;
     text-align: left;
 }
-.card__cont__button{
+.venta__card__cont__button{
     background-color: #30261C;
     color: #ffffff;
     border: none;
@@ -68,46 +69,21 @@
     margin: 10px;
 }
 
-.card--cont--img img{
+.venta__card__cont__img img{
     width: 100%;
 }
-    /*box-model*/
-    .centro{
-        text-align: center;
-        margin: 20px;
-    }
-    .bloque p{  
-        background-color: #d1bd99;
-        font-size: 1.1em;
-    }
-    .cont{
-        margin-top: 30px;
-    }
-        .cont h4{
-        background-color: #E2D9C8;
-        padding: 50px;
-        border: 3px solid #30261C;
-        margin: 20px;
-    }
-    .cont-padding{
-        background-color: #E2D9C8;
-        padding: 20px;
-    }
-    .cont-margin{
-        background-color: #E2D9C8;
-        margin: 50px;
-        border: 3px solid #6B6155;
-    }
- 
-    .img-width{
-        width: 250px;
-    }
+
 /*aside^*/
 .nota{
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-area: eventos;
+}
+.nota__titulo{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
 }
 .nota p{
     width: 780px;
@@ -115,10 +91,9 @@
 /*footer*/
 .pie{
     background-color: #30261C;
-    grid-area: pie-pagina;
 }
 .pie__logo{
-    width: 50%;
+    width: 120px;
 }
 
 /*MEDIA QUERIES*/
