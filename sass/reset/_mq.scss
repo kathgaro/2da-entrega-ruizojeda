@@ -1,0 +1,15 @@
+/*Tablet*/
+@media (max-width:768px) {
+    .venta__card__cont{
+        width: 240px;
+        margin-bottom: 20px;
+    }
+    .encabezado__menu__list li{
+        justify-content: end;
+    }
+}
+
+/*Mobile*/
+@media (max-width:576px){
+  
+}

@@ -1,0 +1,37 @@
+/*main*/
+.venta{
+    &__titulo{
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 2em;
+        text-align: center;
+        margin: 1em;
+    }
+    &__card{
+        &__cont{
+            background-color: #E2D9C8;
+            border-radius: 10px;
+            border: 3px solid #6B6155;
+            overflow: hidden;
+            width: 190px;
+            padding: 0;
+            p{
+                padding: 10px;
+                text-align: left;
+            }
+            &__button{
+                background-color: #30261C;
+                color: #ffffff;
+                border: none;
+                padding: 10px;
+                border-radius: 6px;
+                margin: 10px;
+            }
+            &__img{
+                img{
+                    width: 100%;
+                }
+            } 
+        }
+    }
+}
+

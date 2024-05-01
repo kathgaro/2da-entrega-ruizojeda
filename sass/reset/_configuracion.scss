@@ -1,0 +1,14 @@
+*{
+    /* Eliminamos espacios y márgenes*/
+       margin:0;
+       padding:0;
+    /* Declaramos una tipografía para TODO */
+        font-family: $titulo-principal;
+    /* Declaramos un font-size base */
+}
+
+/*RESET - bs*/
+.container-fluid{
+    --bs-gutter-x: 0; 
+    --bs-gutter-y: 0; 
+}

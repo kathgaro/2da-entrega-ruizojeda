@@ -1,0 +1,29 @@
+/*header*/
+    /*Nav - estilos BS*/
+    .encabezado__logo{
+        color: $blanco;
+    }
+.encabezado{
+    background-image: url('../assets/header-banner-index-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.encabezado__menu img{
+    width: 100px;
+}
+.encabezado__menu{
+    width: 40%;
+}
+.encabezado__menu__list{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.encabezado__menu__list li{
+    display: flex;
+    list-style: none;
+}
+.encabezado__menu__list li a{
+    color: $blanco;
+    text-decoration: none;
+}

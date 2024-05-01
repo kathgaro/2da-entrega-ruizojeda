@@ -1,0 +1,15 @@
+/*aside^*/
+.nota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nota__titulo{
+    font-family: $titulo-secundario ;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+}
+.nota__txt{
+    max-width: 780px;
+}
